@@ -25,9 +25,21 @@ public class loginService implements loginServiceInt {
 	}
 
 	@Override
-	public List<signupEntity> findByEmailAndPassword(String user, String pass) {
+	public List<signupEntity> findByEmailAndPassword(String email, String pass) {
 		// TODO Auto-generated method stub
-		return lri.findByEmailAndPassword(user, pass);
+		return lri.findByEmailAndPassword(email, pass);
+	}
+	
+	@Override
+	public List<signupEntity> findByEmail(String email) {
+		// TODO Auto-generated method stub
+		return lri.findByEmail(email);
+	}
+	
+	@Override
+	public void updatePass(signupEntity se) {
+		// TODO Auto-generated method stub
+		 lri.save(se);
 	}
 
 }

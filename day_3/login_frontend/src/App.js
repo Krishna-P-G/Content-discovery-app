@@ -1,34 +1,41 @@
-import './App.css';
+import "./App.css";
 // import { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Login from './Login_Register/login';
-import Forgot from './Forgot_password/forgot';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./Login_Register/login";
+import Forgot from "./Forgot_password/forgot";
+import Home from "./Home/home";
 
 function App() {
-	return (
-        <BrowserRouter>
-          <Routes>
+  return (
+      <BrowserRouter>
+        <Routes>
           <Route
-              path='/'
-              element=
-              {
-                <>
-                  <Login />
-                </>
-              }
+            path="/"
+            element={
+              <>
+                <Login />
+              </>
+            }
           />
           <Route
-              path='/forgot'
-              element=
-              {
-                <>
-                  <Forgot />
-                </>
-              }
+            path="/home"
+            element={
+              <>
+                <Home />
+              </>
+            }
           />
-          </Routes>
-        </BrowserRouter>
-  )
-  }
-  
+          <Route
+            path="/forgot"
+            element={
+              <>
+                <Forgot />
+              </>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
+  );
+}
+
 export default App;

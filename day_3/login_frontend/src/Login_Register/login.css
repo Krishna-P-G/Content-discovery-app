@@ -3,10 +3,11 @@
 * {
 	box-sizing: border-box;
 }
-.doop{
-    overflow: hidden;
-  }
 
+html
+{
+	overflow:hidden;
+}
 .doop {
 	background: #f6f5f7;
 	display: flex;
@@ -16,6 +17,7 @@
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
+	overflow: hidden;
 }
 
 
@@ -115,7 +117,7 @@
 .overlay {
 	background: #FF416C;
 	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-    background: linear-gradient(to right, #00B4DB, #0083B0);
+    background:  #FF5733;
     background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -252,10 +254,10 @@ footer a {
 	cursor: pointer;
 }
 .ghost {
-	background-color: transparent;
-	border-color: #FFFFFF;
+	background-color: #3498DB;
+	border-color: #3498DB;
+	color: #FFFFFF;
 	border-radius: 20px;
-	color: black;
 	font-weight: bold;
 	padding: 12px 45px;
 	letter-spacing: 1px;
@@ -364,7 +366,7 @@ footer a {
 	padding: 12px 15px;
 	margin: 8px 0;
 	width:23rem;
-	top:11rem;
+	top:12rem;
 }
 
 .signin-password
@@ -401,6 +403,8 @@ footer a {
 	top:22.3rem;
 	left:125px;
 	font-size: 18px;
+	text-decoration:none;
+	color:crimson;
 }
 
 .signInbtn
@@ -427,5 +431,27 @@ footer a {
 	outline: none;
 }
 
+.akatsuki_logo
+{
+	width: 100px;
+	height : 100px;
+}
 
 /* Login form */
+
+.toggle-visibility-icon-signup
+{
+	position:absolute;
+	width:25px;
+	height:25px;
+	top:21rem;
+	left:23rem;
+}
+.toggle-visibility-icon-login
+{
+	position:absolute;
+	width:25px;
+	height:25px;
+	top:18rem;
+	left:23rem;
+}

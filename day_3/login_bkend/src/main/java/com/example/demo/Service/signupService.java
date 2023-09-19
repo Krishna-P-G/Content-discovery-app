@@ -29,7 +29,7 @@ public class signupService implements signupServiceInt {
 		// TODO Auto-generated method stub
 		 sri.save(se);
 	}
-
+	
 	@Override
 	public void deleteData(int id) {
 		// TODO Auto-generated method stub

@@ -4,9 +4,6 @@
 * {
 	box-sizing: border-box;
 }
-.doop {
-    overflow: hidden;
-  }
 
 .doop {
 	background: #f6f5f7;
@@ -17,6 +14,7 @@
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
+	overflow: hidden;
 }
 
 .email-verification-form
@@ -132,7 +130,7 @@
 .overlay {
 	background: #FF416C;
 	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-    background-color: #f7bb97;
+    background-color: #FF5733;
     background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -256,13 +254,28 @@ footer a {
     text-align: center;
 }
 
+.resend_code_text
+{
+	position:absolute;
+	font-size:1rem;
+	left:8.7rem;
+	top:19rem;
+	color:blue;
+	border:none;
+	background:white;
+}
+.didnt_code{
+	color:black;
+}
 .code_text
 {
 	position:absolute;
 	font-size:1rem;
-	left:18rem;
-	top:19rem;
+	left:19.5rem;
+	top:12.8rem;
 	color:blue;
+	border:none;
+	background:white;
 }
 
 .next_button
@@ -380,3 +393,20 @@ footer a {
 	border-color: #FFFFFF;
 }
 /* password container */
+
+.toggle-visibility-icon-pass
+{
+	position:absolute;
+	width:25px;
+	height:25px;
+	top:10rem;
+	left:23rem;
+}
+.toggle-visibility-icon-confirm
+{
+	position:absolute;
+	width:25px;
+	height:25px;
+	top:16rem;
+	left:23rem;
+}

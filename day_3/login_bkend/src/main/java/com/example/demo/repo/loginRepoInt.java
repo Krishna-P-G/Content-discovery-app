@@ -13,5 +13,6 @@ import com.example.demo.Entity.signupEntity;
 public interface loginRepoInt extends JpaRepository<signupEntity, Integer>{
 	public List<signupEntity> findByUsernameAndPassword(String user,String pass);
 	public List<signupEntity> findByEmailAndPassword(String email,String pass);
+	public List<signupEntity> findByEmail(String email);
 
 }
