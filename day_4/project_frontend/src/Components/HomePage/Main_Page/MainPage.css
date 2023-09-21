@@ -1,0 +1,149 @@
+/* MainPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+/* Main Container */
+.main-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.categories-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction:column;
+  width: 15%;
+  margin-bottom: 20px;
+}
+
+.MainPage-page {
+  flex-grow: 1; 
+  max-height: calc(100vh - 100px);
+  overflow-y: auto; 
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto; /* Center the content horizontally */
+}
+.MainPage-page::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.MainPage-page::-webkit-scrollbar-track {
+  background: transparent; /* Track color (make it transparent) */
+}
+
+.MainPage-page::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Thumb color (make it transparent) */
+  border-radius: 4px; /* Border radius of the thumb */
+}
+
+/* MainPage Image */
+
+.MainPage-Image-div {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.MainPage-Image-img {
+  position:relative;
+  height: 25rem;
+  width:25rem;
+  border-radius: 8px;
+}
+
+.MainPage-Image-caption
+{
+  position:relative;
+  left:48px;
+  top:-25px;
+  color:black;
+  max-width:80%;
+  font-family:'Source Serif Pro';
+}
+
+.MainPage-Image-profile-pic
+{
+  position:relative;
+  top:25px;
+  left:-20px;  
+  border-radius:10px;
+  width:60px;
+  height:60px;
+  
+}
+
+.MainPage-Image-username
+{
+  position:relative;
+  top:0px;
+  left:0px;
+  color:black;
+}
+
+/* MainPage Image */
+
+
+/* MainPage Video */
+
+.MainPage-Video-div {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.MainPage-Video-img {
+  position:relative;
+  height: 25rem;
+  width:25rem;
+  border-radius: 8px;
+}
+
+.MainPage-Video-caption
+{
+  position:relative;
+  left:48px;
+  top:-25px;
+  color:black;
+  max-width:80%;
+  font-family:'Source Serif Pro';
+}
+
+.MainPage-Video-profile-pic
+{
+  position:relative;
+  top:25px;
+  left:-20px;  
+  border-radius:10px;
+  width:60px;
+  height:60px;
+  
+}
+
+.MainPage-Video-username
+{
+  position:relative;
+  top:0px;
+  left:0px;
+  color:black;
+}
+
+/* MainPage Video */
+
+.separator-line {
+  background-color: black;
+  height: 15px; /* Adjust the height as needed */
+  width: 100%; /* Full width */
+  margin-top: 20px;
+  margin-bottom:20px;
+  border-radius:10px;
+}
