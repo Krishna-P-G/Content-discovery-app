@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Poppins:wght@500;600;700;800;900&family=Roboto+Slab&display=swap");
+
+.profile_container {
+  background-color: #232d3f;
+  width: 400px;
+  height: 400px;
+  z-index: 100;
+  position: fixed;
+  right: 0%;
+  backdrop-filter: blur(3px);
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.profile_box {
+  margin: 10px;
+  width: 390px;
+  height: 200px;
+}
+.navbar-bigbox {
+  border-bottom: 1px solid black;
+  height: 100px;
+}
+.logopic {
+  height: 60px;
+  width: 60px;
+}
+.profile_img {
+  width: 165px;
+  height: 165px; /* Set the height to match the width for a perfect circle */
+  left: 30%;
+  top: 12%;
+  position: fixed;
+  object-fit: cover; /* Scale the image to cover the entire container */
+  border-radius: 50%; /* Make it round */
+}
+
+.profile_detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-size: 20px;
+  top: 36%;
+  font-family: "Dosis", sans-serif;
+}
+.profile_name {
+  position: absolute;
+  top: 5rem;
+  left: 7.6rem;
+  margin-bottom: 20px;
+  font-family: "Roboto Slab", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.profile_email {
+  position: absolute;
+  top: -8.4rem;
+  left: 4.6rem;
+  margin-bottom: 20px;
+  font-family: "Roboto Slab", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logout {
+  position: absolute;
+  top: 140px;
+  left: 12.5rem;
+  background-color: #1f4172;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 50px;
+  width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.my_uploads {
+  position: absolute;
+  top: 140px;
+  left: 2.5rem;
+  background-color: #d83f31;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 50px;
+  width: 150px;
+  transition: transform 0.3s ease;
+}
+.logout:hover,
+.my_uploads:hover {
+  transform: scale(1.1);
+}
+.imageupload-box {
+  background-color: #f1356d;
+  position: fixed;
+  right: 5.81%;
+  top: 13.4%;
+  z-index: 199;
+  width: 200px;
+  height: 200px;
+}
+.img_package .editbutton {
+  font-size: 30px;
+  font-weight: bolder;
+  position: relative;
+  left: 57%;
+  top: 57%;
+  color: black;
+  width: 30px;
+  border-radius: 90%;
+  background-color: white;
+}
+.img_package .editbutton:hover {
+  transform: scale(1.1);
+}
+.imageupload-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  backdrop-filter: blur(7px);
+  z-index: 99;
+  background-color: #252020c0;
+}
+.img_package {
+  height: 300px;
+}
+.uploader__widget-base.breakpoint-md.uploader__widget-base--draggable {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.uploaderbox {
+  width: 100vw;
+  height: 100vh;
+  z-index: 299px;
+}
+.uploaderbox button {
+  font-size: 25px;
+  position: relative;
+  left: 30%;
+  border: 1px solid #090406;
+  border-radius: 10px;
+  background-color: rgba(2, 57, 39, 0.631);
+  width: 200px;
+}
+.savepic {
+  position: fixed;
+  z-index: 200;
+  right: 5.8%;
+  top: 47%;
+}
+.savepic:hover {
+  color: #f1356d;
+  transform: scale(1.2);
+}
+
+/* base styles */
+* {
+  margin: 0;
+}
+
+/* create new blog form */
+.create {
+  background-color: #3333338f;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  /* background-color: #f1356d; */
+  width: 500px;
+  height: 500px;
+  z-index: -1;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 7%;
+}
+
+.create label {
+  text-align: left;
+  display: block;
+  color: #fff;
+  padding: 2px;
+  font-family: "Quicksand";
+}
+.create input,
+textarea,
+select {
+  background-color: #3333338f;
+  color: aliceblue;
+  font-family: "Quicksand";
+}
+.create h2 {
+  font-size: 20px;
+  color: #eedfe4;
+  margin-bottom: 30px;
+  font-family: "Quicksand";
+}
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #252020;
+  box-sizing: border-box;
+  display: block;
+  font-family: "Quicksand";
+}
+.create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Quicksand";
+}
+/* wordLimit */
+.errorLimit {
+  position: absolute;
+  color: red;
+  top: 1500px;
+  z-index: 99;
+  font-family: "Quicksand";
+}
+.add-uploaderbox {
+  width: 90vw;
+  height: 100vh;
+}
+.addimage-container {
+  z-index: 199;
+  width: 76.57vw;
+
+  height: 100vh;
+  position: fixed;
+  backdrop-filter: blur(8px);
+  z-index: 300;
+  background-color: #252020ca;
+}
+.add_container {
+  width: 400px;
+  height: 100%;
+  z-index: 599;
+  position: fixed;
+  right: 0%;
+  backdrop-filter: blur(8px);
+
+  /* background-color: transparent; */
+}
